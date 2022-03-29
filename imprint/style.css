@@ -1,0 +1,129 @@
+/**
+ * This file is part of the Obsidian Client Website
+ * (in the following referred to as "this website").
+ * Copyright (C) 2022  Alexander Richter
+ * 
+ * This website is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+
+ * This website is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this website.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+*{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    background-image: url(../resources/Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    --colorAccent: #4070F4;
+    --colorAccentDark: #2F63DE;
+    --colorPrimary: white;
+    --colorPrimaryDark: #494a4b;
+}
+
+#home {
+    margin: 0 auto;
+    background-color: var(--colorPrimary);
+    box-shadow: 0 10px 36px rgba(0,0,0,.30);
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+#home .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorPrimaryDark);
+    color: white;
+    padding: 15px;
+}
+
+#home .logo {
+    width: 192.5px;
+    height: 42px;
+    background-image: url(../resources/Logo.png);
+    background-size: cover;
+    margin-left: 20px;
+    user-select: none;
+}
+
+#home .labels {
+    display: flex;
+    gap: 20px
+}
+
+#home .label {
+    font-weight: 500;
+    padding: 12px 40px;
+    color: white;
+    user-select: none;
+}
+
+#home .label-box {
+    background-color: var(--colorPrimary);
+    color: black;
+    border-radius: 5px;
+}
+
+#home .content {
+    padding: 28px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#home .content a {
+    color: #004cff;
+}
+
+#home .content a:hover {
+    color: #002b8f;
+}
+
+#home .content a:active {
+    color: #494a4b;
+}
+
+#home .content p {
+    font-weight: 500;
+}
+
+#home .content h1 {
+    font-weight: 700;
+    font-size: larger;
+    text-align: center;
+}
+
+#home .content h2 {
+    font-weight: 700;
+    font-size: large;
+}
+
+#home .back-arrow {
+    font-weight: 600;
+    padding: 12px 24px;
+    user-select: none;
+    background-color: var(--colorPrimary);
+    color: black;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 730px) {
+    #home .tab-control {
+        visibility: hidden;
+        position: absolute;
+    }
+}

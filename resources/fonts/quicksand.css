@@ -1,0 +1,52 @@
+/**
+ * This file is part of the Obsidian Client Website
+ * (in the following referred to as "this website").
+ * Copyright (C) 2022  Alexander Richter
+ * 
+ * This website is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+
+ * This website is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this website.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+/* ---------- Quicksand ---------- */
+
+/* Quicksand Light */
+@font-face {
+    font-family: "Quicksand";
+    font-weight: 300;
+    font-style: normal;
+    src: url("quicksand/Quicksand-Light.woff") format("woff");
+}
+
+/* Quicksand Regular */
+@font-face {
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-style: normal;
+    src: url("quicksand/Quicksand-Regular.woff") format("woff");
+}
+
+/* Quicksand Medium */
+@font-face {
+    font-family: "Quicksand";
+    font-weight: 500;
+    font-style: normal;
+    src: url("quicksand/Quicksand-Medium.woff") format("woff");
+}
+
+/* Quicksand Bold */
+@font-face {
+    font-family: "Quicksand";
+    font-weight: 700;
+    font-style: normal;
+    src: url("quicksand/Quicksand-Bold.woff") format("woff");
+}

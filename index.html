@@ -1,0 +1,158 @@
+<!--
+This file is part of the Obsidian Client Website
+(in the following referred to as "this website").
+Copyright (C) 2022  Alexander Richter
+
+This website is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This website is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this website.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="resources/fonts/montserrat.css"/>
+        <link rel="stylesheet" href="resources/fonts/quicksand.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js"></script>
+        <link rel="shortcut icon" type="image/png" href="resources/LogoSmallBackground.png"/>
+        <title>Obsidian Client</title>
+    </head>
+    <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="navbar_items">
+                <a href="#home" class="navbar_logo"></a>
+                <div class="navbar_menu_toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navbar_menu">
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#donate">Donate</a>
+                </div>
+                <a href="#download" class="button navbar_button">Download</a>
+            </div>
+        </nav>
+
+        <!-- HOME -->
+        <section id="home">
+            <div class="container">
+                <div class="items">
+                    <img src="resources/Logo.png" alt="Obsidean Client Logo">
+                    <h3>Obsidian Client is your Minecraft client of choice!</h3>
+                    <h4>
+                        Obsidian Client fits perfectly into Minecraft and
+                        offers many features that will improve your
+                        multiplayer experience!
+                    </h4>
+                    <h3>Also it's completely free and open source!</h3>
+                    <div class="buttons">
+                        <a href="#features" class="button">Features</a>
+                        <a href="#download" class="button">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features">
+            <p class="headline">Features</p>
+            <p class="info">Some of our best features...</p>
+            <div class="tiles">
+                <div class="tile">
+                    <p class="tile_headline">Customizable HUD</p>
+                    <p class="tile_description">Drag HUD components were you want!</p>
+                </div>
+
+                <div class="tile">
+                    <p class="tile_headline">Keystrokes</p>
+                    <p class="tile_description">Display specific keys of your keyboard on your screen!</p>
+                </div>
+            </div>
+
+            <div class="tiles">
+                <div class="tile">
+                    <p class="tile_headline">Vanilla Design</p>
+                    <p class="tile_description">Our design is vanilla orientated, so it fits perfectly!</p>
+                </div>
+
+                <div class="tile">
+                    <p class="tile_headline">Armor Status</p>
+                    <p class="tile_description">Display your armor with damage percentage on your screen!</p>
+                </div>
+            </div>
+
+            <div class="tiles">
+                <div class="tile">
+                    <p class="tile_headline">Forge Compatible</p>
+                    <p class="tile_description">Obsidian is Forge compatible, so you can add additional Mods as you wish!</p>
+                </div>
+
+                <div class="tile">
+                    <p class="tile_headline">General Info Displays</p>
+                    <p class="tile_description">Obsidian has lots of modules that can display you information about the current game on the screen!</p>
+                </div>
+            </div>
+            <p class="info">...and much more!</p>
+        </section>
+
+        <!-- DONATE -->
+        <section id="donate">
+            <p class="headline">Donate</p>
+            <p class="description">
+                Obsidian Client is developt by a small team in freetime!<br>
+                So we need donations to also support Obsidian Client in the future!<br>
+                At the moment we only support PayPal donations!<br>
+            </p>
+            <a href="" class="button">Donate!</a>
+        </section>
+
+        <!-- DOWNLOAD -->
+        <section id="download">
+            <p class="headline">Download</p>
+            <p class="description">Step 1: Please download the Obsidian Client installer!</p>
+            <div class="tiles">
+                <div class="tile">
+                    <p>Installer</p>
+                    <a class="button">Coming Soon!</a>
+                </div>
+            </div>
+            <p class="description">Step 2: Make sure you have <a href="https://java.com/download/" class="link">Java</a> installed and launch the installer!</p>
+            <p class="description">Step 3: Install & Have Fun!</p>
+            <br>
+            <p class="description">Note: Obsidian Client is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" class="link">GNU General Public License</a>!</p>
+        </section>
+
+        <!-- FOOTER -->
+        <section id="footer">
+            <p class="headline">Obsidian Client</p>
+            <div class="privacy">
+                <a href="imprint/index.html">Imprint</a>
+                <a href="privacy-policy/index.html">Privacy Policy</a>
+                <a href="license/index.html">License</a>
+                <a href="third-party/index.html">Third-party</a>
+            </div>
+            <!--<a class="label" href="https://fontawesome.com/" target="_blank">Icons by Font Awesome</a>-->
+            <!--<a class="label" href="https://undraw.co/" target="_blank">Vector-Art by unDraw</a>-->
+            <p class="notice">
+                <a href="https://github.com/obsidian-client/">Github</a> | <a href="https://archive.obsidian-client.com/">Archive</a>
+            </p>
+        </section>
+
+    </body>
+</html>
