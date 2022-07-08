@@ -17,6 +17,68 @@
  * along with this website.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+ @media (prefers-color-scheme: light) {
+    
+    :root {
+        --colorPrimary: white;
+        --colorPrimaryVariant: #f6f6f6;
+        --colorOnPrimary: black;
+    
+        --colorSecondary: #26282B; /* Old Value: #494a4b */
+        --colorOnSecondary: white;
+    
+        --colorTertiary: #2F63DE;
+        --colorOnTertiary: white;
+    
+        --colorAccent: #4070F4;
+        --colorOnAccent: white;
+    
+        --colorFooter: black;
+        --colorOnFooter: white;
+    
+        --colorOnBackground: white;
+        --colorShadow: rgba(0,0,0,.15);
+
+        background-image: url(resources/Background.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #home .logo { background-image: url(resources/LogoColored.png); }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    
+    :root {
+        --colorPrimary: #26282B;
+        --colorPrimaryVariant: #232528;
+        --colorOnPrimary: white;
+
+        --colorSecondary: #353941;
+        --colorOnSecondary: white;
+
+        --colorTertiary: #2F63DE;
+        --colorOnTertiary: white;
+
+        --colorAccent: #4070F4;
+        --colorOnAccent: white;
+
+        --colorFooter: black;
+        --colorOnFooter: white;
+
+        --colorOnBackground: white;
+        --colorShadow: rgba(0,0,0,.15);
+
+        background-image: url(resources/BackgroundDark.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #home .logo { background-image: url(resources/Logo.png); }
+
+}
+
 *{
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
@@ -25,19 +87,10 @@
     box-sizing: border-box;
 }
 
-:root {
-    background-image: url(../resources/Background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    --colorAccent: #4070F4;
-    --colorAccentDark: #2F63DE;
-    --colorPrimary: white;
-    --colorPrimaryDark: #494a4b;
-}
-
 #home {
     margin: 0 auto;
     background-color: var(--colorPrimary);
+    color: var(--colorOnPrimary);
     box-shadow: 0 10px 36px rgba(0,0,0,.30);
     max-width: 1200px;
     min-height: 100vh;
@@ -47,17 +100,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--colorPrimaryDark);
-    color: white;
+    background-color: var(--colorPrimaryVariant);
+    color: var(--colorOnPrimary);
     padding: 15px;
 }
 
 #home .logo {
     width: 192.5px;
     height: 42px;
-    background-image: url(../resources/Logo.png);
     background-size: cover;
     margin-left: 20px;
+    user-select: none;
 }
 
 #home .labels {
@@ -68,12 +121,13 @@
 #home .label {
     font-weight: 500;
     padding: 12px 40px;
-    color: white;
+    color: var(--colorOnPrimary);
+    user-select: none;
 }
 
 #home .label-box {
-    background-color: var(--colorPrimary);
-    color: black;
+    background-color: var(--colorAccent);
+    color: var(--colorOnAccent);
     border-radius: 5px;
 }
 
@@ -84,15 +138,12 @@
 }
 
 #home .content a {
-    color: #004cff;
+    color: var(--colorAccent);
+    transition: .1s linear;
 }
 
 #home .content a:hover {
-    color: #002b8f;
-}
-
-#home .content a:active {
-    color: #494a4b;
+    color: var(--colorTertiary);
 }
 
 #home .content p {
@@ -114,8 +165,10 @@
     font-weight: 600;
     padding: 12px 24px;
     user-select: none;
-    background-color: var(--colorPrimary);
-    color: black;
+    color: var(--colorOnPrimary);
+    border-style: solid;
+    border-color: var(--colorAccent);
+    border-width: 2px;
     border-radius: 5px;
 }
 
