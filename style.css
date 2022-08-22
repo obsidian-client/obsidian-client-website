@@ -398,7 +398,7 @@ body {
 
 #download .tiles {
     display: grid;
-    grid-template-columns: repeat(1, 250px);
+    grid-template-columns: repeat(3, 250px);
     gap: 25px;
     margin: 25px;
     align-items: center;
